@@ -1,17 +1,17 @@
 package web.service;
 
-import org.springframework.stereotype.Component;
-
+import org.springframework.stereotype.Service;
 import web.model.Car;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Component
+@Service
 public class CarServiceImpl implements CarService {
 
     @Override
-    public List<Car> getCarList(Integer count) {
+    public final List<Car> getCarList(Integer count) {
         List<Car> carList; {
             carList = new ArrayList<>();
             carList.add(new Car("Лада", "Кайора", 1997));
