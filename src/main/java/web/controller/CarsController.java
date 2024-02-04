@@ -9,7 +9,6 @@ import web.service.CarService;
 
 @Controller
 public class CarsController {
-
     private final CarService carService;
 
     @Autowired
